@@ -347,6 +347,7 @@ header {
       </div>
     </form>
   </div>
+  
   <div class="center-container">
     <!-- Centered Sign Up Button -->
     <p>Join the vibrant community of young people passionate about faith, service, and personal growth. Whether you're looking to build lasting friendships, develop leadership skills, or deepen your connection with Christ, SYFC offers a place for you. Don't miss out on this opportunity to be part of something meaningful!</p>
@@ -454,53 +455,38 @@ header {
             <img src="footer logo.png" alt="Footer Logo" class="float-sm-end" width="150" height="50"> <br>
         </div>
         <h6 class="text-center" style="text-decoration: none;"><b>©2025 Singapore Youth For Christ. All Rights Reserved</b></h6>
-
-        
-        <title>SYFC</title>
-        <style>
-          #chatbox { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #2bb2fb; }
-          #messages { height: 300px; overflow-y: auto; margin-bottom: 10px; }
-          .bot, .user { padding: 5px; margin: 5px 0; }
-          .bot { background-color: rgb(175, 175, 247); }
-          .user { background-color: rgb(145, 199, 252); text-align: right; }
-        </style>
-      </head>
-      <body>
-      
-        <script>
-          async function sendMessage() {
-            const input = document.getElementById('userInput');
-            const message = input.value.trim();  // Get the user input message
-            if (!message) return;
-        
-            // Append the user's message to the chat display
-            const chat = document.getElementById('messages');
-            chat.innerHTML += `<div class="user">You: ${message}</div>`;
-            input.value = '';  // Clear the input field
-        
-            // Send the message to your API Gateway
-            try {
-              const res = await fetch("https://453raaitvf.execute-api.us-east-1.amazonaws.com/default", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ message })  // Send the message in the request body
-              });
-        
-              const data = await res.json();
-              chat.innerHTML += `<div class="bot">Bot: ${data.reply}</div>`;  // Display the bot's response
-              chat.scrollTop = chat.scrollHeight;  // Scroll to the bottom of the chat
-            } catch (error) {
-              console.error("Error:", error);
-            }
-          }
-        </script>
-        
-      </body>
-
+      </script>
     </footer>
-
+    <script>
+      async function sendMessage() {
+        const input = document.getElementById('userInput');
+        const message = input.value.trim();  // Get the user input message
+        if (!message) return;
+    
+        // Append the user's message to the chat display
+        const chat = document.getElementById('messages');
+        chat.innerHTML += `<div class="user">You: ${message}</div>`;
+        input.value = '';  // Clear the input field
+    
+        // Send the message to your API Gateway
+        try {
+          const res = await fetch("https://453raaitvf.execute-api.us-east-1.amazonaws.com/default", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ message })  // Send the message in the request body
+          });
+    
+          const data = await res.json();
+          chat.innerHTML += `<div class="bot">Bot: ${data.reply}</div>`;  // Display the bot's response
+          chat.scrollTop = chat.scrollHeight;  // Scroll to the bottom of the chat
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      }
+    </script>
+    
 <!-- Bootstrap JavaScript and Popper.js -->
 <!-- Bootstrap JS Bundle with Popper (no integrity check) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
