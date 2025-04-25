@@ -456,7 +456,7 @@ header {
         <h6 class="text-center" style="text-decoration: none;"><b>©2025 Singapore Youth For Christ. All Rights Reserved</b></h6>
 
         
-        <title>SYFC CHATBOT</title>
+        <title>SYFC</title>
         <style>
           #chatbox { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #2bb2fb; }
           #messages { height: 300px; overflow-y: auto; margin-bottom: 10px; }
@@ -467,34 +467,36 @@ header {
       </head>
       <body>
       
-        <div id="chatbox">
-          <div id="messages"></div>
-          <input type="text" id="userInput" placeholder="Ask me anything..." />
-          <button onclick="sendMessage()">Send</button>
-        </div>
-      
         <script>
           async function sendMessage() {
             const input = document.getElementById('userInput');
-            const message = input.value.trim();
+            const message = input.value.trim();  // Get the user input message
             if (!message) return;
-      
+        
+            // Append the user's message to the chat display
             const chat = document.getElementById('messages');
             chat.innerHTML += `<div class="user">You: ${message}</div>`;
-            input.value = '';
-      
-            const res = await fetch('https://453raaitvf.execute-api.us-east-1.amazonaws.com/default', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ message })
-            });
-      
-            const data = await res.json();
-            chat.innerHTML += `<div class="bot">Bot: ${data.reply}</div>`;
-            chat.scrollTop = chat.scrollHeight;
+            input.value = '';  // Clear the input field
+        
+            // Send the message to your API Gateway
+            try {
+              const res = await fetch("https://453raaitvf.execute-api.us-east-1.amazonaws.com/default", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ message })  // Send the message in the request body
+              });
+        
+              const data = await res.json();
+              chat.innerHTML += `<div class="bot">Bot: ${data.reply}</div>`;  // Display the bot's response
+              chat.scrollTop = chat.scrollHeight;  // Scroll to the bottom of the chat
+            } catch (error) {
+              console.error("Error:", error);
+            }
           }
         </script>
-      
+        
       </body>
 
     </footer>
