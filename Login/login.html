@@ -100,13 +100,6 @@
   </div>
 </nav>
 </div>
-<ul class="navbar-nav">
-  <!-- existing nav links -->
-</ul>
-
-<!-- Add user welcome here -->
-<span id="welcomeUser" class="ms-3 fw-bold text-primary"></span>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
@@ -217,33 +210,17 @@ to {
   </script>
 
   <script type="module">
-  import { userManager } from "./main.js";
+    import { userManager } from "./main.js";
 
-  userManager.signinCallback().then(function (user) {
-    const userName = user.profile?.name || user.profile?.email || "User";
-    
-    // Show name in header
-    document.getElementById("welcomeUser").textContent = `Welcome, ${userName}`;
-    
-    // Also display other token data
-    document.getElementById("email").textContent = user.profile?.email;
-    document.getElementById("access-token").textContent = user.access_token;
-    document.getElementById("id-token").textContent = user.id_token;
-    document.getElementById("refresh-token").textContent = user.refresh_token;
-    
-    // Optionally store for future access
-    localStorage.setItem("username", userName);
-  }).catch(err => {
-    console.error("Signin callback error:", err);
-  });
-</script>
-
-<script>
-  const savedName = localStorage.getItem("username");
-  if (savedName) {
-    document.getElementById("welcomeUser").textContent = `Welcome, ${savedName}`;
-  }
-</script>
+    userManager.signinCallback().then(function (user) {
+      document.getElementById("email").textContent = user.profile?.email;
+      document.getElementById("access-token").textContent = user.access_token;
+      document.getElementById("id-token").textContent = user.id_token;
+      document.getElementById("refresh-token").textContent = user.refresh_token;
+    }).catch(err => {
+      console.error("Signin callback error:", err);
+    });
+  </script>
 
   <script type="module">
     import { signOutRedirect } from "./main.js";
