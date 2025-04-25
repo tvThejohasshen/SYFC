@@ -191,45 +191,50 @@ to {
 
 </head>
 <body>
+  <div class="container text-center mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <p>Kindly login from the button below. Thank you.</p>
+        <button id="signIn" class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+  </div>
   
- <!-- Login Prompt and Button -->
- <div class="container mt-4 text-center">
-  <p>Kindly login from the button below. Thank you</p>
-  <button id="signIn" class="btn btn-primary">Sign In</button>
-  <!-- Uncomment below if you want a logout button -->
-  <!-- <button id="signOut" class="btn btn-danger mt-2">Log Out</button> -->
-</div>
 
-  <!-- Scripts -->
-  <script type="module">
-    import { userManager } from "./main.js";
+  <!-- Sign Out Button 
+  <div class="container mt-3">
+    <button id="signOut" class="btn btn-danger">Log out</button>
+  </div> -->
 
-    document.getElementById("signIn").addEventListener("click", async () => {
-      await userManager.signinRedirect();
-    });
-  </script>
-
-  <script type="module">
-    import { userManager } from "./main.js";
-
-    userManager.signinCallback().then(function (user) {
-      document.getElementById("email").textContent = user.profile?.email;
-      document.getElementById("access-token").textContent = user.access_token;
-      document.getElementById("id-token").textContent = user.id_token;
-      document.getElementById("refresh-token").textContent = user.refresh_token;
-    }).catch(err => {
-      console.error("Signin callback error:", err);
-    });
-  </script>
-
-  <script type="module">
-    import { signOutRedirect } from "./main.js";
-
-    document.getElementById("signOut").addEventListener("click", async () => {
-      await signOutRedirect();
-    });
-  </script>
-
+    <!-- Scripts -->
+    <script type="module">
+      import { userManager } from "./main.js";
+  
+      document.getElementById("signIn").addEventListener("click", async () => {
+        await userManager.signinRedirect();
+      });
+    </script>
+  
+    <script type="module">
+      import { userManager } from "./main.js";
+  
+      userManager.signinCallback().then(function (user) {
+        document.getElementById("email").textContent = user.profile?.email;
+        document.getElementById("access-token").textContent = user.access_token;
+        document.getElementById("id-token").textContent = user.id_token;
+        document.getElementById("refresh-token").textContent = user.refresh_token;
+      }).catch(err => {
+        console.error("Signin callback error:", err);
+      });
+    </script>
+  
+    <script type="module">
+      import { signOutRedirect } from "./main.js";
+  
+      document.getElementById("signOut").addEventListener("click", async () => {
+        await signOutRedirect();
+      });
+    </script>
 
 <footer class="bd-footer py-5 mt-5 bg-light">
   <div class="container py-5">
@@ -309,7 +314,7 @@ to {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-</body>
+</body>>
 
 </body>
 </html>
