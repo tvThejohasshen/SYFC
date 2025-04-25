@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS (Only One Link Needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+      crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+    <div>
+        <br>
+        <img src="Syfc logo.png" alt="SYFC Logo" class="img-fluid mx-auto d-block" width="100" height="100">
+    </div>
+    
+    <div>
+        <marquee direction="right">Singapore Youth For Christ</marquee>
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/index.html">
+                              <img src="/About/home.jpg" alt="Home" style="width: 30px; height: 30px;">
+                            </a>
+                          </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="About" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="About">
+                                <li><a class="dropdown-item" href="ourmission.html">Our Mission</a></li>
+                                <li><a class="dropdown-item" href="#">Ministries</a></li>
+                                <li><a class="dropdown-item" href="leaders.html">Leaders</a></li>
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                                <li><a class="dropdown-item" href="privacypolicy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="Stories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Stories
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="Stories">
+                                <li><a class="dropdown-item" href="/Stories/ourjourney.html">Our Journey</a></li>
+                                <li><a class="dropdown-item" href="/Stories/reach.html">Reach</a></li>
+                                <li><a class="dropdown-item" href="/Stories/testimonials.html">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="/Stories/communityvoices.html">Community Voices</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="Opportunities" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opportunities
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="Opportunities">
+                                <li><a class="dropdown-item" href="/Opportunities/students.html">Students</a></li>
+                                <li><a class="dropdown-item" href="/Opportunities/volunteers.html">Volunteers</a></li>
+                                <li><a class="dropdown-item" href="/Opportunities/churchpartners.html">Church Partners</a></li>
+                                <li><a class="dropdown-item" href="/Opportunities/businesspartnerships.html">Business Partnerships</a></li>
+                                <li><a class="dropdown-item" href="/Opportunities/joinus.html">Join us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="SupportUs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Support Us
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="SupportUs">
+                                <li><a class="dropdown-item" href="/Supportus/donate.html">Donate</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/findus/findus.html">Find Us</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/Login/login.html">Login</a>
+                          </li>
+                        
+                    </ul>
+        
+                    <!-- Search Form Properly Positioned -->
+                    <form class="d-flex ms-auto" action="https://www.google.com/search" method="GET" target="_blank">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search Google..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <title> Ministries</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.column {
+    background: rgb(97, 194, 235);
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 20px;
+    color: #385af3;
+    font-weight: bold;
+    text-align: left; /* Center-aligns the h1 */
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #383838;
+}
+
+h2 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0;
+}
+    
+
+.acronym {
+    color: #eff1f3;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.flex-item {
+    padding: 10px; /* Reduced padding for smaller size */
+    background-color: #e2ff8c;
+    border: 3px solid #161515;
+    text-align: center;
+    cursor: pointer;
+    width: 15%; /* Reduced width of each flex item */
+    transition: background-color 0.3s;
+    font-size: 14px; /* Reduced font size for smaller text */
+}
+
+.flex-item:hover {
+    background-color: #ddd;
+}
+
+.highlight {
+    background-color: yellow; /* Highlight with yellow */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark color for the text */
+    padding: 0.5px;
+}     
+
+    header {
+      font-size: 1.5em; /* Adjusts font size */
+      font-weight: bold; /* Makes the font bold */
+      text-align: center; /* Centers the text */
+      padding: 10px 0; /* Adds space around the text */
+      margin: 10px 0; /* Adds margin for spacing */
+      color: #0c88ca; /* Dark text color */
+      font-family: 'Arial', sans-serif; /* Sets a clean font */
+      border-bottom: 3px solid #bebebe; /* Adds a subtle line beneath */
+    }
+    .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Aligns from left to right */
+}
+
+.image-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Slight black overlay */
+    color: white;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+
+
+  </style>
+
+
+<header class="ministries-header">Ministries</header>
+<br>
+<p class="ministries-description">
+    As <span class="highlight">John 15:5</span> reminds us to depend on God as we do the work of youth evangelism, 
+    we have named our ministries with the following acronyms:
+</p>
+<br>
+
+    <div class="grid-container">
+        <div class="column">
+          <h2 style="text-align: center;"><span class="acronym">C O R E</span></h2>
+            <p><b>
+                “Rooted in Christ, Reaching the Next Generation.We abide in Jesus as the true vine, drawing strength, wisdom, and direction from Him. From this place of dependence, we are empowered to serve, teach, engage, and evangelize—reaching young people where they are, nurturing their faith, and walking with them into a life fully rooted in Christ.”
+           </b> </p>
+        </div>
+
+        <div class="column">
+            <h2 style="text-align: center;"><span class="acronym">S T E M</span><br>
+            
+                Support, Teaching & Engagement Ministries</h2>
+                <p><b> In this ministry, staff seek to provide administrative support, equipping with teaching of God’s word as well as engagement of our friends & donors.
+           </b> </p>
+        </div>
+
+        <div class="column">
+            <h2 style="text-align: center;"><span class="acronym">E D G E</span><br>
+            
+                Evolving & Digital Generation Evangelism Ministry</h2>
+                
+              <p><b> We befriend youths through particular interests, like: dance, arts and sports, or inclination through: school-based programs, community contact and church partnership.
+          </b> </p>
+        </div>
+
+        <div class="column">
+            <h2 style="text-align: center;"><span class="acronym">Our Immersive Experience</span></h2>
+            <p>
+               <b> Join us in experiencing meaningful connections, real stories, and life-changing encounters that bring faith to life for today’s digital generation.
+           </b> </p>
+        </div>
+    </div>
+    <br>
+    <p style="text-align: center; font-weight: bold;">Our CORE Ministries</p>
+    <p style="text-align: center;">CATEGORISED BY AGED GROUPS</p>
+    <div class="info-box">
+      <div class="flex-container">
+          <div class="flex-item" onclick="toggleContent('content1')">
+              <img src="/About/Ministriesimg/click.png" alt="Icon for 10-12 years old" class="img-fluid mb-2" width="20" height="20">
+              10-12 years old
+          </div>
+          <div class="flex-item" onclick="toggleContent('content2')">
+              <img src="/About/Ministriesimg/click.png" alt="Icon for 13-17 years old" class="img-fluid mb-2" width="20" height="20">
+              13-17 years old
+          </div>
+          <div class="flex-item" onclick="toggleContent('content3')">
+              <img src="/About/Ministriesimg/click.png" alt="Icon for Tertiary" class="img-fluid mb-2" width="20" height="20">
+              Tertiary
+          </div>
+      </div>
+  </div>
+  
+  
+  
+  <!-- Hidden Content for each section -->
+  <div id="content1" class="content-box" style="display: none;">
+    <h1>Preteens</h1>
+      <p><i>"Our mission is to nurture the spiritual and personal growth of pre-teens, guiding them toward faith, values, and a strong connection with their community through Christ-centered events and teachings.We believe that parents play a vital role in the spiritual growth of their children. Our ministry encourages regular communication and involvement, providing resources and support to help parents guide their preteens in their faith journey".</i></p>
+      <ul>
+        <li>Support pre-teens in developing strong values and faith-based decisions.</li>
+        <li>Provide Christ-centered events to foster personal and spiritual growth.</li>
+        <li>Encourage a supportive community for pre-teens and their families.</li>
+        <li>Offer resources for parents to engage in their children’s faith journey.</li>
+        <li>Empower parents to play an active role in their child's spiritual development.</li>
+      </ul>
+  
+      <p><span class="highlight"><i>"We are here to help preteens grow in faith and parents to be empowered in guiding them".</i></span></p>
+    </div>
+    </div>
+  
+  <div id="content2" class="content-box" style="display: none;">
+      <h1>Secondary School Ministry</h1>
+      <p><span class="highlight"><i>"Reaching secondary school and college youths for Christ"</span></i></p>
+
+      <p><b>Bible Studies:</b> Engaging in regular sessions to guide students in faith.<br>
+         <b>Peer Fellowship:</b> Encouraging a supportive and fun environment.<br>
+         <b>Leadership Development:</b> Opportunities for students to take leadership roles and grow.<br>
+         <b>Community Outreach:</b> Helping teens serve others in meaningful ways.</br>
+  
+       <h1>Junior College Ministry</h1>
+      <p><span class="highlight"><i>"We aim to help students navigate their faith during this critical period of their lives. We provide a supportive community, engaging discussions, and opportunities for personal growth and service".</span></i><br>
+        <b>Bible Studies:</b> Deepening the understanding of faith during a crucial stage of life.<br>
+        <b>Mentorship:</b> Personalized guidance to help students navigate both academic and spiritual challenges.<br>
+        <b>Fellowship Events:</b> Building a supportive and encouraging environment for JC students.<br>
+        <b>Campus Outreach:</b> Opportunities for students to share their faith and serve the community.</br></p>
+        <h1>Youth Guidance Ministry</h1>
+
+    <p><span class="highlight"><i>"Reaching youths from needy families, facing tremendous stress, displaying behavioural problems in school or at home and requiring some form of academic or social assistance".</span></i></p>
+    <p>The Youth Guidance ministry reaches out to at-risk youth and pre-teens. Some of the youth/pre-teens may come from dysfunctional or disadvantaged families, while others could be youth offenders struggling with addiction or associating with gangs and crimes.</p>
+    <p><strong>Youth Guidance (YG) strives to guide and nurture these youth from:</strong></p>
+
+    <ul class="content-list">
+        <li>Rehabilitation Centre</li>
+        <li>Residential Homes</li>
+        <li>Community outreach</li>
+        <li>Partnership with other social services or VWOs</li>
+    </ul>
+
+    <p><span class="highlight"><i>"We share God’s love and comfort, teaching Christian values and life skills in the process. We use practical aids, games and sports, experiential learning, and academic help".</p></span></i>
+  </div>
+  
+  <div id="content3" class="content-box" style="display: none;">
+    <h1>Polytechnic and ITE Ministry</h1>
+
+    <p><span class="highlight"><i>"Reaching out to polytechnic and ITE students to share the love of Christ, providing guidance and support during their crucial years of study and personal development".</i></span></p>
+
+    <p>This ministry focuses on youth in post-secondary institutions, particularly polytechnics and ITE, who are navigating the challenges of academic pressure, career choices, and personal growth. Through mentorship, community building, and faith-based activities, we aim to guide them towards a fulfilling life in Christ.</p>
+
+    <p><strong>The Polytechnic and ITE Ministry works to:</strong></p>
+
+    <ul class="content-list">
+        <li>Provide spiritual guidance and support to students facing academic and personal challenges</li>
+        <li>Help students grow in their faith through Bible studies, fellowship, and community outreach</li>
+        <li>Organize events and activities that foster a deeper relationship with Christ and their peers</li>
+        <li>Partner with other Christian organizations and local churches to create opportunities for service and engagement</li>
+    </ul>
+</div>
+
+<script>
+  function toggleContent(id) {
+    // Get all content boxes
+    var allContent = document.querySelectorAll('.content-box');
+
+    // Hide all content boxes
+    allContent.forEach(function(content) {
+        content.style.display = 'none';
+    });
+
+    // Show the clicked content
+    var content = document.getElementById(id);
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+    } else {
+        content.style.display = 'none';
+    }
+}
+ </script>
+ <br>
+ <div class="image-container">
+  <div class="image-box">
+  <img src="/About/Ministriesimg/1.jpg" alt="Image 1">
+  <div class="overlay-text">Poly Project serve</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/2.jpg" alt="Image 2">
+  <div class="overlay-text">Group star formation</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/3.jpg" alt="Image 3">
+  <div class="overlay-text">Our climbing instructors</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/4.jpg" alt="Image 4">
+  <div class="overlay-text">A Game of laser tag</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/5.jpg" alt="Image 5">
+  <div class="overlay-text">Slackline</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/6.jpg" alt="Image 6">
+  <div class="overlay-text">Table games</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/7.jpg" alt="Image 7">
+  <div class="overlay-text">catching a frisbee disc</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/8.jpg" alt="Image 8">
+  <div class="overlay-text">Uncovering mysteries</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/9.jpg" alt="Image 9">
+  <div class="overlay-text">Childrens Programme</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/10.jpg" alt="Image 9">
+  <div class="overlay-text">A Teensportz competition</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/11.jpg" alt="Image 10">
+  <div class="overlay-text">Sports climbing activity</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/12.jpg" alt="Image 11">
+  <div class="overlay-text">Game of captains ball</div>
+  </div>
+  <div class="image-box">
+  <img src="/About/Ministriesimg/13.png" alt="Image 12">
+  <div class="overlay-text">Experimental learning activity</div>
+  </div>
+ </br>
+</div>
+
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                        <img src="syfc.png" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title>
+                        <span class="fs-5">SYFC</span>
+                    </a>
+
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">"Empowering the next generation to live with purpose, faith, and love through Jesus Christ."</li>
+                        <li class="mb-2">"Building a community of young people who are passionate about making a difference in the world."</li>
+                        <li class="mb-2">"Inspiring youth to embrace their identity in Christ and impact their communities positively."</li>
+                    </ul>
+                </div>
+                
+                <!-- Footer links -->
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="ourmission.html">Our Mission</a></li>
+                        <li class="mb-2"><a href="#">Ministries</a></li>
+                        <li class="mb-2"><a href="leaders.html">Leaders</a></li>
+                        <li class="mb-2"><a href="history.html">History</a></li>
+                        <li class="mb-2"><a href="privacypolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Stories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/Stories/ourjourney.html">Our Journey</a></li>
+                        <li class="mb-2"><a href="/Stories/reach.html">Reach</a></li>
+                        <li class="mb-2"><a href="/Stories/testimonials.html">Testimonials</a></li>
+                        <li class="mb-2"><a href="/Stories/communityvoices.html">Community Voices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Opportunities</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/Opportunities/students.html">Students</a></li>
+                        <li class="mb-2"><a href="/Opportunities/volunteers.html">Volunteers</a></li>
+                        <li class="mb-2"><a href="/Opportunities/churchpartners.html">Church Partners</a></li>
+                        <li class="mb-2"><a href="/Opportunities/businesspartnerships.html">Business Partnerships</a></li>
+                        <li class="mb-2"><a href="/Opportunities/joinus.html">Join Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Support Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/Supportus/donate.html">Donate</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/SYFC.ORG.SG" target="_blank" rel="noopener noreferrer">
+                      <img src="fb.jpg" alt="Facebook" width="50"height="50">
+                    </a>
+                    <a href="https://www.instagram.com/sg.yfc/?hl=en" target="_blank" rel="noopener noreferrer">
+                      <img src="instagram.jpg" alt="Instagram" width="50" height="50">
+                    </a>
+                  </div>
+            </div>
+            <img src="footer logo.png" alt="Footer Logo" class="float-sm-end" width="150" height="50"> <br>
+        </div>
+        <h6 class="text-center" style="text-decoration: none;"><b>©2025 Singapore Youth For Christ. All Rights Reserved</b></h6>
+
+    </footer>
+
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Go6n8jO1vce9lH8r+GZ61nA5yT2l6G5g5I5NO3y6J8KmRUw" crossorigin="anonymous"></script>
+
+   
+</body>
+
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS (Only One Link Needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+      crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+    <div>
+        <br>
+        <img src="Syfc logo.png" alt="SYFC Logo" class="img-fluid mx-auto d-block" width="100" height="100">
+    </div>
+    
+    <div>
+        <marquee direction="right">Singapore Youth For Christ</marquee>
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/index.html">
+                              <img src="/About/home.jpg" alt="Home" style="width: 30px; height: 30px;">
+                            </a>
+                          </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="About" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="About">
+                                <li><a class="dropdown-item" href="#">Our Mission</a></li>
+                                <li><a class="dropdown-item" href="ministries.html">Ministries</a></li>
+                                <li><a class="dropdown-item" href="leaders.html">Leaders</a></li>
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                                <li><a class="dropdown-item" href="privacypolicy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="Stories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Stories
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="Stories">
+                                <li><a class="dropdown-item" href="/Stories/ourjourney.html">Our Journey</a></li>
+                                <li><a class="dropdown-item" href="/Stories/reach.html">Reach</a></li>
+                                <li><a class="dropdown-item" href="/Stories/testimonials.html">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="/Stories/communityvoices.html">Community Voices</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="Opportunities" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opportunities
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="Opportunities">
+                                <li><a class="dropdown-item" href="/Opportunities/students.html">Students</a></li>
+                                <li><a class="dropdown-item" href="/Opportunities/volunteers.html">Volunteers</a></li>
+                                <li><a class="dropdown-item" href="/Opportunities/churchpartners.html">Church Partners</a></li>
+                                <li><a class="dropdown-item" href="/Opportunities/businesspartnerships.html">Business Partnerships</a></li>
+                                <li><a class="dropdown-item" href="/Opportunities/joinus.html">Join us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="SupportUs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Support Us
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="SupportUs">
+                                <li><a class="dropdown-item" href="/Supportus/donate.html">Donate</a></li>
+                                
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/findus/findus.html">Find Us</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/Login/login.html">Login</a>
+                          </li>
+                        
+                    </ul>
+        
+                    <!-- Search Form Properly Positioned -->
+                    <form class="d-flex ms-auto" action="https://www.google.com/search" method="GET" target="_blank">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search Google..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <title> Our Mission</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ebf1f3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+h1 {
+    font-size: 20px;
+    color: #385af3;
+    font-weight: bold;
+    text-align: left; /* Center-aligns the h1 */
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #383838;
+}
+
+h2 {
+    color: #ebeced;
+    margin-top: 0;
+}
+
+.acronym {
+    color: #eff1f3;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.flex-item {
+    padding: 10px; /* Reduced padding for smaller size */
+    background-color: #d5fa97;
+    border: 3px solid #161515;
+    text-align: center;
+    cursor: pointer;
+    width: 15%; /* Reduced width of each flex item */
+    transition: background-color 0.3s;
+    font-size: 14px; /* Reduced font size for smaller text */
+}
+
+.flex-item:hover {
+    background-color: #eaf69c;
+}
+
+.highlight {
+    background-color: rgb(240, 244, 14); /* Highlight with yellow */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark color for the text */
+    padding: 0.5px;
+}     
+
+    header {
+      font-size: 1.5em; /* Adjusts font size */
+      font-weight: bold; /* Makes the font bold */
+      text-align: center; /* Centers the text */
+      padding: 10px 0; /* Adds space around the text */
+      margin: 10px 0; /* Adds margin for spacing */
+      color: #0c88ca; /* Dark text color */
+      font-family: 'Arial', sans-serif; /* Sets a clean font */
+      border-bottom: 3px solid #bebebe; /* Adds a subtle line beneath */
+    }
+    .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Aligns from left to right */
+}
+
+  </style>
+
+
+<header class="our mission-header">Our Mission</header>
+<br>
+<p>Our mission is to support underserved youth in Singapore by providing education, mentorship, and resources to help them thrive in today’s world.
+Our ministry ethos represents the core principles that bind us together. It outlines our purpose, the values we adhere to in fulfilling that purpose, and our collective responsibility to those we serve.
+While we embrace diverse approaches, we remain united in our mission of youth evangelism, striving to make a positive impact on the lives of young people across Singapore.</p>
+
+<div class="grid-container">  </div>
+      <div class="flex-container">
+          <div class="flex-item" onclick="toggleContent('content1')">
+              <img src="/About/Ministriesimg/click.png" alt="Icon for 10-12 years old" class="img-fluid mb-2" width="20" height="20">
+              Our Purpose
+          </div>
+          <div class="flex-item" onclick="toggleContent('content2')">
+              <img src="/About/Ministriesimg/click.png" alt="Icon for 13-17 years old" class="img-fluid mb-2" width="20" height="20">
+              Our Principles
+          </div>
+          <div class="flex-item" onclick="toggleContent('content3')">
+              <img src="/About/Ministriesimg/click.png" alt="Icon for Tertiary" class="img-fluid mb-2" width="20" height="20">
+             Our People
+          </div>
+      </div>
+  </div>
+  
+  
+  
+  <!-- Hidden Content for each section -->
+  <div id="content1" class="content-box" style="display: none;">
+    <h1>Our Purposes</h1>
+    <ol>
+      <li>We aim to lead every believing young person to obey Christ and be fruitful to Him in service. 
+          <a href="https://www.biblegateway.com/passage/?search=2+Timothy+4%3A5&version=ESV" data-bs-toggle="tooltip" title="2 Timothy 4:5 - As for you, always be sober-minded, endure suffering, do the work of an evangelist, fulfill your ministry."><span class="highlight">Tim 4:5</span></a>
+      </li>
+      <li>We aim to prepare and equip every believing young person for the mission of youth evangelism. 
+          <a href="https://www.biblegateway.com/passage/?search=2+Timothy+3%3A16-17&version=ESV" data-bs-toggle="tooltip" title="2 Timothy 3:16-17 - All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work."><span class="highlight">2 Tim 3:16-17</span></a>
+      </li>
+      <li>We aim to mobilize other believers for the work of youth evangelism. 
+          <a href="https://www.biblegateway.com/passage/?search=Matthew+9%3A35-38&version=ESV" data-bs-toggle="tooltip" title="Matthew 9:35-38 - And Jesus went throughout all the cities and villages, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction. And he said to his disciples, ‘The harvest is plentiful, but the laborers are few".><span class="highlight">Matt 9:35-38</span></a>
+      </li>
+      <li>We aim to impress upon people that the stewardship and responsibility for youth evangelism go beyond the shores of Singapore. 
+          <a href="https://www.biblegateway.com/passage/?search=Acts+1%3A8&version=ESV" data-bs-toggle="tooltip" title="Acts 1:8 - But you will receive power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth."><span class="highlight">Acts 1:8</span></a>
+      </li>
+      <li>We aim to build a strong and supportive community for young people where they can grow in their faith and relationships with one another. 
+          <a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A16&version=ESV" data-bs-toggle="tooltip" title="Ephesians 4:16 - From whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love."><span class="highlight">Ephesians 4:16</span></a>
+      </li>
+      <li>We aim to provide opportunities for young people to actively serve in local communities and in global missions. 
+          <a href="https://www.biblegateway.com/passage/?search=Matthew+28%3A19-20&version=ESV" data-bs-toggle="tooltip" title="Matthew 28:19-20 - Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you."><span class="highlight">Matthew 28:19-20</span></a>
+      </li>
+      <li>We aim to nurture a heart for social justice, teaching young people the importance of helping the marginalized and the needy. 
+          <a href="https://www.biblegateway.com/passage/?search=James+1%3A27&version=ESV" data-bs-toggle="tooltip" title="James 1:27 - Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world."><span class="highlight">James 1:27</span></a>
+      </li>
+      <li>We aim to foster partnerships with churches, ministries, and organizations to strengthen the body of Christ and expand the reach of youth evangelism. 
+          <a href="https://www.biblegateway.com/passage/?search=1+Corinthians+12%3A12-14&version=ESV" data-bs-toggle="tooltip" title="1 Corinthians 12:12-14 - For just as the body is one and has many members, and all the members of the body, though many, are one body, so it is with Christ."><span class="highlight">Corinthians 12:12-14</span></a>
+      </li>
+      <li>We aim to raise up young leaders who will disciple others and be active in their local communities. 
+          <a href="https://www.biblegateway.com/passage/?search=2+Timothy+2%3A2&version=ESV" data-bs-toggle="tooltip" title="2 Timothy 2:2 - And what you have heard from me in the presence of many witnesses entrust to faithful men who will be able to teach others also."><span class="highlight">Timothy 2:2</span></a>
+      </li>
+      <li>We aim to encourage young people to embrace their identity in Christ, building a firm foundation of faith, hope, and love. 
+          <a href="https://www.biblegateway.com/passage/?search=Colossians+2%3A6-7&version=ESV" data-bs-toggle="tooltip" title="Colossians 2:6-7 - Therefore, as you received Christ Jesus the Lord, so walk in him, rooted and built up in him and established in the faith, just as you were taught, abounding in thanksgiving."><span class="highlight">Colossians 2:6-7</span></a>
+      </li>
+      <li>We aim to provide training and resources that will help young people effectively share the gospel in today’s digital age. 
+          <a href="https://www.biblegateway.com/passage/?search=Romans+10%3A14-15&version=ESV" data-bs-toggle="tooltip" title="Romans 10:14-15 - How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?"><span class="highlight">Romans 10:14-15</span></a>
+      </li>
+      <li>We aim to empower youth to use their God-given gifts and talents in creative ways to glorify God and serve others. 
+          <a href="https://www.biblegateway.com/passage/?search=1+Peter+4%3A10-11&version=ESV" data-bs-toggle="tooltip" title="1 Peter 4:10-11 - As each has received a gift, use it to serve one another, as good stewards of God’s varied grace: whoever speaks, as one who speaks oracles of God; whoever serves, as one who serves by the strength that God supplies."><span class="highlight">Peter 4:10-11</span></a>
+      </li>
+    </ol>
+    
+    </div>
+    </div>
+  
+  <div id="content2" class="content-box" style="display: none;">
+      <h1>Our Principles</h1>
+<ol>
+  <li>We accept that giving our resources is a necessary part of our expression of what service to God is. We will do our best to ensure that all our ministry activities are self-supporting. We will avoid being wasteful or lavish in our spending. 
+    <a href="https://www.biblegateway.com/passage/?search=1+Thessalonians+2%3A9&version=ESV" data-bs-toggle="tooltip" title="1 Thessalonians 2:9 - For you remember, brothers, our labor and toil: we worked night and day, that we might not be a burden to any of you, while we proclaimed to you the gospel of God."><span class="highlight">1 Thess 2:9</span></a>
+  </li>
+  <li>We accept and willingly participate in raising our own financial support because we believe:
+    <ul>
+      <li>It allows us to exercise our faith in God whom we believe provides for all our needs. 
+        <a href="https://www.biblegateway.com/passage/?search=2+Corinthians+9%3A8&version=ESV" data-bs-toggle="tooltip" title="2 Corinthians 9:8 - And God is able to make all grace abound to you, so that having all sufficiency in all things at all times, you may abound in every good work."><span class="highlight">2 Cor 9:8</span></a>
+      </li>
+      <li>It allows those who support us financially to be in partnership with us in youth evangelism and missions. 
+        <a href="https://www.biblegateway.com/passage/?search=Philippians+1%3A5&version=ESV" data-bs-toggle="tooltip" title="Philippians 1:5 - because of your partnership in the gospel from the first day until now."><span class="highlight">Phil 1:5</span></a>, 
+        <a href="https://www.biblegateway.com/passage/?search=Philippians+4%3A15-16&version=ESV" data-bs-toggle="tooltip" title="Philippians 4:15-16 - And you Philippians yourselves know that in the beginning of the gospel, when I left Macedonia, no church entered into partnership with me in giving and receiving, except you only."><span class="highlight">Phil 4:15-16</span></a>
+      </li>
+      <li>It will benefit our financial supporters. 
+        <a href="https://www.biblegateway.com/passage/?search=Philippians+4%3A17&version=ESV" data-bs-toggle="tooltip" title="Philippians 4:17 - Not that I seek the gift, but I seek the fruit that increases to your credit."><span class="highlight">Phil 4:17</span></a>
+      </li>
+    </ul>
+  </li>
+  <li>We recognize that leadership is our responsibility but servanthood is our position. 
+    <a href="https://www.biblegateway.com/passage/?search=Mark+10%3A42-45&version=ESV" data-bs-toggle="tooltip" title="Mark 10:42-45 - But Jesus called them to him and said to them, 'You know that those who are considered rulers of the Gentiles lord it over them, and their great ones exercise authority over them. But it shall not be so among you. But whoever would be great among you must be your servant, and whoever would be first among you must be slave of all. For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many.'"><span class="highlight">Mk 10:42-45</span></a>
+  </li>
+  <li>We will respond quickly and creatively to changes in order to be effective in youth evangelism and yet remain true to the preaching of the apostolic gospel. 
+    <a href="https://www.biblegateway.com/passage/?search=1+Corinthians+9%3A19-23&version=ESV" data-bs-toggle="tooltip" title="1 Corinthians 9:19-23 - For though I am free from all, I have made myself a servant to all, that I might win more of them. To the Jews I became as a Jew, in order to win Jews. To those under the law I became as one under the law (though not being myself under the law) that I might win those under the law."><span class="highlight">1 Cor 9:19-23</span></a>
+  </li>
+  <li>In their first encounters with SYFC, we would like:
+    <ul>
+      <li>Non-Christian youths to see SYFC as an organization that provides meaningful fun. 
+        <a href="https://www.biblegateway.com/passage/?search=Ecclesiastes+11%3A9-10&version=ESV" data-bs-toggle="tooltip" title="Ecclesiastes 11:9-10 - Rejoice, O young man, in your youth, and let your heart cheer you in the days of your youth. Walk in the ways of your heart and the sight of your eyes. But know that for all these things God will bring you into judgment."><span class="highlight">Ecc 11:9-10</span></a>
+      </li>
+      <li>Believers to see SYFC as a movement committed to youth evangelism. 
+        <a href="https://www.biblegateway.com/passage/?search=John+4%3A34-38&version=ESV" data-bs-toggle="tooltip" title="John 4:34-38 - Jesus said to them, 'My food is to do the will of him who sent me and to accomplish his work. Do you not say, 'There are yet four months, then comes the harvest'? Look, I tell you, lift up your eyes, and see that the fields are white for harvest.'"><span class="highlight">Jn 4:34-38</span></a>
+      </li>
+    </ul>
+  </li>
+  <li>We will prioritize discipleship and spiritual growth in our youth ministry, believing that our strength comes from a strong relationship with God. 
+    <a href="https://www.biblegateway.com/passage/?search=Colossians+1%3A28-29&version=ESV" data-bs-toggle="tooltip" title="Colossians 1:28-29 - Him we proclaim, warning everyone and teaching everyone with all wisdom, that we may present everyone mature in Christ. For this I toil, struggling with all his energy that he powerfully works within me."><span class="highlight">Col 1:28-29</span></a>
+  </li>
+  <li>We are committed to prayer, as we believe it is foundational for all ministry and personal growth in Christ. 
+    <a href="https://www.biblegateway.com/passage/?search=Philippians+4%3A6-7&version=ESV" data-bs-toggle="tooltip" title="Philippians 4:6-7 - Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."><span class="highlight">Phil 4:6-7</span></a>
+  </li>
+  <li>We will maintain integrity in all areas of ministry and relationships, being honest, transparent, and true to the teachings of Christ. 
+    <a href="https://www.biblegateway.com/passage/?search=Proverbs+12%3A22&version=ESV" data-bs-toggle="tooltip" title="Proverbs 12:22 - Lying lips are an abomination to the Lord, but those who act faithfully are his delight."><span class="highlight">Prov 12:22</span></a>
+  </li>
+  <li>We will actively seek out ways to serve the local community, helping to meet both spiritual and physical needs, reflecting Christ’s love. 
+    <a href="https://www.biblegateway.com/passage/?search=Matthew+25%3A35-40&version=ESV" data-bs-toggle="tooltip" title="Matthew 25:35-40 - For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me."><span class="highlight">Matt 25:35-40</span></a>
+  </li>
+</ol>
+  </div>
+  
+  <div id="content3" class="content-box" style="display: none;">
+    <h1>Our People</h1>
+    <ol>
+      <li>We will seek to build up each believing young person to a deeper maturity in Christ by taking genuine interest in his or her life. 
+        <a href="https://www.biblegateway.com/passage/?search=1+Thessalonians+2%3A7-12&version=ESV" data-bs-toggle="tooltip" title="1 Thessalonians 2:7-12 - But we were gentle among you, like a nursing mother taking care of her own children. So, being affectionately desirous of you, we were ready to share with you not only the gospel of God but also our own selves, because you had become very dear to us."><span class="highlight">1 Thess 2:7-12</span></a>
+      </li>
+      <li>We will invest our time, resources, and effort in our volunteers and staff members in order to equip and build them up to a deeper maturity in Christ. 
+        <a href="https://www.biblegateway.com/passage/?search=Colossians+1%3A28-29&version=ESV" data-bs-toggle="tooltip" title="Colossians 1:28-29 - Him we proclaim, warning everyone and teaching everyone with all wisdom, that we may present everyone mature in Christ. For this I toil, struggling with all his energy that he powerfully works within me."><span class="highlight">Col 1:28-29</span></a>
+      </li>
+      <li>We will responsibly teach God’s Word and help each young person become the person God wants him or her to be and do the things He wants him or her to do. 
+        <a href="https://www.biblegateway.com/passage/?search=2+Timothy+2%3A15&version=ESV" data-bs-toggle="tooltip" title="2 Timothy 2:15 - Do your best to present yourself to God as one approved, a worker who has no need to be ashamed, rightly handling the word of truth."><span class="highlight">2 Tim 2:15</span></a>
+      </li>
+      <li>We will cultivate a culture of mentoring and discipleship, encouraging older believers to invest in the spiritual growth of younger believers. 
+        <a href="https://www.biblegateway.com/passage/?search=Titus+2%3A3-5&version=ESV" data-bs-toggle="tooltip" title="Titus 2:3-5 - Older women likewise are to be reverent in behavior, not slanderers or slaves to much wine. They are to teach what is good, and so train the young women to love their husbands and children, to be self-controlled, pure, working at home, kind, and submissive to their own husbands, that the word of God may not be reviled."><span class="highlight">Titus 2:3-5</span></a>
+      </li>
+      <li>We will provide consistent and supportive relationships for young people, guiding them through the challenges of life with love, grace, and biblical wisdom. 
+        <a href="https://www.biblegateway.com/passage/?search=Proverbs+27%3A17&version=ESV" data-bs-toggle="tooltip" title="Proverbs 27:17 - Iron sharpens iron, and one man sharpens another."><span class="highlight">Prov 27:17</span></a>
+      </li>
+      <li>We will promote spiritual accountability among our youth, encouraging them to grow in their faith and to hold one another accountable in love. 
+        <a href="https://www.biblegateway.com/passage/?search=Galatians+6%3A1-2&version=ESV" data-bs-toggle="tooltip" title="Galatians 6:1-2 - Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted. Bear one another's burdens, and so fulfill the law of Christ."><span class="highlight">Gal 6:1-2</span></a>
+      </li>
+      <li>We will strive to create an environment where each person can feel valued, accepted, and empowered to use their gifts and talents for God's glory. 
+        <a href="https://www.biblegateway.com/passage/?search=1+Corinthians+12%3A4-7&version=ESV" data-bs-toggle="tooltip" title="1 Corinthians 12:4-7 - Now there are varieties of gifts, but the same Spirit; and there are varieties of service, but the same Lord; and there are varieties of activities, but it is the same God who empowers them all in everyone. To each is given the manifestation of the Spirit for the common good."><span class="highlight">1 Cor 12:4-7</span></a>
+         </li>
+      <li>We will encourage young people to develop a heart for missions, to see beyond their immediate surroundings and be part of God’s global plan. 
+        <a href="https://www.biblegateway.com/passage/?search=Matthew+28%3A19-20&version=ESV" data-bs-toggle="tooltip" title="Matthew 28:19-20 - Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age."><span class="highlight">Matt 28:19-20</span></a>
+        </li>
+      <li>We will prioritize the development of the whole person—mind, body, and spirit—by encouraging healthy habits and lifestyles. 
+        <a href="https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A19-20&version=ESV" data-bs-toggle="tooltip" title="1 Corinthians 6:19-20 - Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body."><span class="highlight">1 Cor 6:19-20</span></a>
+         </li>
+    </ol>
+    
+</div>
+
+<script>
+  function toggleContent(id) {
+    // Get all content boxes
+    var allContent = document.querySelectorAll('.content-box');
+
+    // Hide all content boxes
+    allContent.forEach(function(content) {
+        content.style.display = 'none';
+    });
+
+    // Show the clicked content
+    var content = document.getElementById(id);
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+    } else {
+        content.style.display = 'none';
+    }
+}
+ </script>
+ </body>
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                        <img src="syfc.png" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title>
+                        <span class="fs-5">SYFC</span>
+                    </a>
+
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">"Empowering the next generation to live with purpose, faith, and love through Jesus Christ."</li>
+                        <li class="mb-2">"Building a community of young people who are passionate about making a difference in the world."</li>
+                        <li class="mb-2">"Inspiring youth to embrace their identity in Christ and impact their communities positively."</li>
+                    </ul>
+                </div>
+                
+                <!-- Footer links -->
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Our Mission</a></li>
+                        <li class="mb-2"><a href="ministries.html">Ministries</a></li>
+                        <li class="mb-2"><a href="leaders.html">Leaders</a></li>
+                        <li class="mb-2"><a href="history.html">History</a></li>
+                        <li class="mb-2"><a href="privacypolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Stories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/Stories/ourjourney.html">Our Journey</a></li>
+                        <li class="mb-2"><a href="/Stories/reach.html">Reach</a></li>
+                        <li class="mb-2"><a href="/Stories/testimonials.html">Testimonials</a></li>
+                        <li class="mb-2"><a href="/Stories/communityvoices.html">Community Voices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Opportunities</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/Opportunities/students.html">Students</a></li>
+                        <li class="mb-2"><a href="/Opportunities/volunteers.html">Volunteers</a></li>
+                        <li class="mb-2"><a href="/Opportunities/churchpartners.html">Church Partners</a></li>
+                        <li class="mb-2"><a href="/Opportunities/businesspartnerships.html">Business Partnerships</a></li>
+                        <li class="mb-2"><a href="/Opportunities/joinus.html">Join Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Support Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/Supportus/donate.html">Donate</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/SYFC.ORG.SG" target="_blank" rel="noopener noreferrer">
+                      <img src="fb.jpg" alt="Facebook" width="50"height="50">
+                    </a>
+                    <a href="https://www.instagram.com/sg.yfc/?hl=en" target="_blank" rel="noopener noreferrer">
+                      <img src="instagram.jpg" alt="Instagram" width="50" height="50">
+                    </a>
+                  </div>
+            </div>
+            <img src="footer logo.png" alt="Footer Logo" class="float-sm-end" width="150" height="50"> <br>
+        </div>
+        <h6 class="text-center" style="text-decoration: none;"><b>©2025 Singapore Youth For Christ. All Rights Reserved</b></h6>
+
+    </footer>
+
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Go6n8jO1vce9lH8r+GZ61nA5yT2l6G5g5I5NO3y6J8KmRUw" crossorigin="anonymous"></script>
+
+   
+</body>
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS (Only One Link Needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+      crossorigin="anonymous">
+      
+
+    <title>Hello, world!</title>
+     <!-- EmailJS Library -->
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+     <!-- Initialize EmailJS -->
+     <script>
+       (function () {
+         emailjs.init("U7E8Ko8nJ9PciY1Ld");
+       })();
+     </script>
+</head>
+<body>
+    <div>
+        <br>
+        <img src="Syfc logo.png" alt="SYFC Logo" class="img-fluid mx-auto d-block" width="100" height="100">
+    </div>
+    
+    <div>
+        <marquee direction="right">Singapore Youth For Christ</marquee>
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item me-4">
+                        <a class="nav-link" href="/index.html">
+                          <img src="/About/home.jpg" alt="Home" style="width: 30px; height: 30px;">
+                        </a>
+                      </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="About" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="About">
+                              <li><a class="dropdown-item" href="/About/ourmission.html">Our Mission</a></li>
+                              <li><a class="dropdown-item" href="/About/ministries.html">Ministries</a></li>
+                              <li><a class="dropdown-item" href="/About/leaders.html">Leaders</a></li>
+                              <li><a class="dropdown-item" href="/About/history.html">History</a></li>
+                              <li><a class="dropdown-item" href="/About/privacypolicy.html">Privacy Policy</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="Stories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Stories
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="Stories">
+                              <li><a class="dropdown-item" href="/Stories/ourjourney.html">Our Journey</a></li>
+                              <li><a class="dropdown-item" href="/Stories/reach.html">Reach</a></li>
+                              <li><a class="dropdown-item" href="/Stories/testimonials.html">Testimonials</a></li>
+                              <li><a class="dropdown-item" href="/Stories/communityvoices.html">Community Voices</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="Opportunities" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opportunities
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="Opportunities">
+                                <li><a class="dropdown-item" href="students.html">Students</a></li>
+                                <li><a class="dropdown-item" href="volunteers.html">Volunteers</a></li>
+                                <li><a class="dropdown-item" href="churchpartners.html">Church Partners</a></li>
+                                <li><a class="dropdown-item" href="businesspartnerships.html">Business Partnerships</a></li>
+                                <li><a class="dropdown-item" href="#">Join us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                          <a class="nav-link dropdown-toggle" href="#" id="SupportUs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Support Us
+                          </a>
+                          <ul class="dropdown-menu py-2" aria-labelledby="SupportUs">
+                              <li><a class="dropdown-item" href="/Supportus/donate.html">Donate</a></li>
+                             
+                          </ul>
+                      </li>
+                      <li class="nav-item me-4">
+                          <a class="nav-link" href="/findus/findus.html">Find Us</a>
+                      </li>
+                 
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="/Login/login.html">Login</a>
+                  </li>
+                </ul>
+        
+                    <!-- Search Form Properly Positioned -->
+                    <form class="d-flex ms-auto" action="https://www.google.com/search" method="GET" target="_blank">
+                      <input class="form-control me-2" type="search" name="q" placeholder="Search Google..." aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ebf1f3;
+}
+
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #006699;
+    }
+    .section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 6px solid #006699;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      margin: 15px 0;
+      padding-left: 20px;
+      border-left: 4px solid #ccc;
+    }
+    ul {
+      margin: 10px 0 10px 20px;
+    }
+    a {
+      color: #006699;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      font-size: 1.8em; /* Adjusts font size */
+      font-weight: bold; /* Makes the font bold */
+      text-align: center; /* Centers the text */
+      padding: 10px 0; /* Adds space around the text */
+      margin: 10px 0; /* Adds margin for spacing */
+      color: #0c88ca; /* Dark text color */
+      font-family: 'Arial', sans-serif; /* Sets a clean font */
+      border-bottom: 2px solid #bebebe; /* Adds a subtle line beneath */
+    }
+    body {
+      background-color: #f4f8fa;
+    }
+
+    .highlight {
+    background-color: rgb(251, 210, 107); /* Highlight with yellow */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark color for the text */
+    padding: 1px;
+} 
+h2 {
+            font-size: 22px;
+        }
+
+    .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Aligns from left to right */
+
+    .highlight {
+    background-color: rgb(240, 244, 14); /* Highlight with yellow */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark color for the text */
+    padding: 0.5px;
+} 
+}
+.form-section {
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+        .form-header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+  </style>
+  <!-- Join Us Section -->
+  <div class="container mt-5">
+    <div class="form-section">
+        <h2 class="form-header">Sign Up @ Singapore Youth for Christ</h2>
+        <p class="text-center">We are excited to welcome new members who share our mission of empowering youth and serving in Christ's name. Fill out the form below to express your interest in joining our community.</p>
+
+     
+ <!-- Sign Up Form -->
+ <form id="contact-form" action="#" method="POST">
+  <!-- Hidden Field for Date -->
+  <input type="hidden" name="time" value="Mar 10 2025 08:46">
+
+  <!-- Personal Information -->
+  <h4 class="my-4">Personal Information</h4>
+  <div class="mb-3">
+      <label for="fullName" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="fullName" name="fullName" required>
+  </div>
+  <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+  <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" name="phone" required>
+  </div>
+
+  <!-- Password & Confirm Password -->
+  <h4 class="my-4">Account Information</h4>
+  <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+  </div>
+  <div class="mb-3">
+      <label for="confirmPassword" class="form-label">Confirm Password</label>
+      <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+  </div>
+
+  <!-- Availability & Commitment -->
+  <h4 class="my-4">Availability & Commitment</h4>
+  <div class="mb-3">
+      <label for="availability" class="form-label">How many hours per week are you available to volunteer?</label>
+      <input type="number" class="form-control" id="availability" name="availability" required>
+  </div>
+  <div class="mb-3">
+      <label for="commitment" class="form-label">Why do you want to join Singapore Youth for Christ?</label>
+      <textarea class="form-control" id="commitment" name="commitment" rows="4" required></textarea>
+  </div>
+
+  <!-- Areas of Interest -->
+  <h4 class="my-4">Areas of Interest</h4>
+  <div class="mb-3">
+      <label for="interest" class="form-label">Which area(s) would you like to get involved in? (Select all that apply)</label>
+      <div>
+          <input type="checkbox" id="ministry" name="interest" value="Ministry">
+          <label for="ministry">Ministry</label>
+      </div>
+      <div>
+          <input type="checkbox" id="leadership" name="interest" value="Leadership Development">
+          <label for="leadership">Leadership Development</label>
+      </div>
+      <div>
+          <input type="checkbox" id="outreach" name="interest" value="Community Outreach">
+          <label for="outreach">Community Outreach</label>
+      </div>
+      <div>
+          <input type="checkbox" id="missions" name="interest" value="Mission Trips">
+          <label for="missions">Mission Trips</label>
+      </div>
+  </div>
+
+  <!-- Previous Experience -->
+  <h4 class="my-4">Previous Experience</h4>
+  <div class="mb-3">
+      <label for="experience" class="form-label">Do you have any previous experience in youth ministry, leadership, or community service?</label>
+      <textarea class="form-control" id="experience" name="experience" rows="4"></textarea>
+  </div>
+
+  <!-- Terms & Privacy -->
+  <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="agree" name="agree" required>
+      <label class="form-check-label" for="agree">I agree to the terms and conditions of Singapore Youth for Christ.</label>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn-primary">Submit Application</button>
+</form>
+
+<!-- Response Message -->
+<div id="responseMessage" class="response-message"></div>
+</div>
+</div>
+
+
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        emailjs.sendForm("service_93ldrnd", "template_9s2vqu2", "#contact-form")
+          .then(function(response) {
+            console.log("SUCCESS!", response.status, response.text);
+            alert("Form sent successfully!");
+            location.reload();
+          }, function(error) {
+            console.log("FAILED...", error);
+            alert("Failed to send email. Please try again.");
+          });
+      }); 
+    };
+  </script>
+<br>
+  <div class="container">
+  <p class="lead text-center" style="font-size: 1.1rem";><span class="highlight">At SYFC, we are committed to nurturing young people in their faith and providing opportunities for spiritual growth, leadership, and service. When you join us, you'll become part of a vibrant community making a real impact in the world.</span></p>
+      <br><div class="row">
+          <div class="col-md-4">
+              <h4>Spiritual Growth</h4>
+              <p>Grow in your faith and relationship with Christ through weekly gatherings, Bible studies, and prayer sessions. Join a community where you can learn, share, and deepen your understanding of the Word of God.</span></p>
+          </div>
+          <div class="col-md-4">
+              <h4>Leadership Development</h4>
+              <p>Develop your leadership skills by taking on active roles within the group. Lead Bible studies, mentor younger students, and plan community outreach initiatives that make a lasting difference.</p>
+          </div>
+          <div class="col-md-4">
+              <h4>Mission Trips</h4>
+              <p>Embark on life-changing mission trips to different parts of the world. Serve communities in need and spread the message of hope and love through practical service and cultural exchange.></p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<br>
+<div class="container">
+      <h2 class="text-center">How to Join</h2><br>
+      <p class="lead text-center" style="font-size: 1.1rem";><span class="highlight">Joining us is easy! Follow these simple steps to become a member of the SYFC community:</span></p>
+     <br> <div class="row">
+          <div class="col-md-4">
+              <h4>Step 1: Fill Out the Application Form</h4>
+              <p>Start your journey with SYFC .This will help us understand your background and how you want to contribute to our community.</p>
+          </div>
+          <div class="col-md-4">
+              <h4>Step 2: Attend an Orientation</h4>
+              <p>Join us for an orientation session where you’ll meet other students, learn about SYFC's values and mission, and discover how you can get involved in our activities.</p>
+          </div>
+          <div class="col-md-4">
+              <h4>Step 3: Get Connected</h4>
+              <p>Once you've completed the orientation, connect with other members through Bible study groups, prayer circles, and various outreach projects. Start serving and growing alongside others!</p>
+          </div>
+      </div>
+  </div>
+</section>
+<br>
+<!-- Benefits of Joining Section -->
+
+  <div class="container">
+      <h2 class="text-center">What’s in it for You?</h2><br>
+      <p class="lead text-center" style="font-size: 1.1rem";><span class="highlight">When you become part of the SYFC family, you gain more than just friends. You gain a place to grow spiritually, develop essential life skills, and make a positive impact in the world. Here are some benefits of joining us:</span></p>
+     <br> <div class="row">
+          <div class="col-md-4">
+              <h4>Build Lifelong Friendships</h4>
+              <p>At SYFC, you’ll be surrounded by people who share your faith and passions. You’ll form lasting relationships that go beyond just your youth group and into your lifelong journey with Christ.</p>
+          </div>
+          <div class="col-md-4">
+              <h4>Make an Impact</h4>
+              <p>From local outreach to international mission trips, you will have numerous opportunities to serve others and make a lasting impact on communities in need.</p>
+          </div>
+          <div class="col-md-4">
+              <h4>Grow as a Leader</h4>
+              <p>Develop your leadership potential through mentorship, training, and hands-on experience. Take on active roles that help shape the future of our youth ministry.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+ <style>
+        .form-section {
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+        .form-header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+  background-color: #fff;
+  color: #0c0c0d;
+  font-family: sans-serif;
+  line-height: 1.8;
+  padding: 20px 20px 20px 20px;
+  margin: 0;
+  text-align: center;
+}
+
+footer .row {
+  margin: 0;
+}
+
+footer .col-6 {
+  padding-left: 40px;
+  padding-right: 15px;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  padding-left: 10;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #006699;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+
+    
+</body>
+</html>
+
+
+  
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                        <img src="syfc.png" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title>
+                        <span class="fs-5">SYFC</span>
+                    </a>
+
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">"Empowering the next generation to live with purpose, faith, and love through Jesus Christ."</li>
+                        <li class="mb-2">"Building a community of young people who are passionate about making a difference in the world."</li>
+                        <li class="mb-2">"Inspiring youth to embrace their identity in Christ and impact their communities positively."</li>
+                    </ul>
+                </div>
+                
+                <!-- Footer links -->
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><a href="/About/ourmission.html">Our Mission</a></li>
+                      <li class="mb-2"><a href="/About/ministries.html">Ministries</a></li>
+                      <li class="mb-2"><a href="/About/leaders.html">Leaders</a></li>
+                      <li class="mb-2"><a href="/About/history.html">History</a></li>
+                      <li class="mb-2"><a href="/About/privacypolicy.html">Privacy Policy</a></li>
+                  </ul>
+                  
+                  </div>
+                  <div class="col-6 col-lg-2 mb-3">
+                    <h5>Stories</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><a href="/Stories/ourjourney.html">Our Journey</a></li>
+                      <li class="mb-2"><a href="/Stories/reach.html">Reach</a></li>
+                      <li class="mb-2"><a href="/Stories/testimonials.html">Testimonials</a></li>
+                      <li class="mb-2"><a href="/Stories/communityvoices.html">Community Voices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Opportunities</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="students.html">Students</a></li>
+                        <li class="mb-2"><a href="volunteers.html">Volunteers</a></li>
+                        <li class="mb-2"><a href="churchpartners.html">Church Partners</a></li>
+                        <li class="mb-2"><a href="businesspartnerships.html">Business Partnerships</a></li>
+                        <li class="mb-2"><a href="#">Join Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Support Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/Supportus/donate.html">Donate</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="social-media">
+                  <a href="https://www.facebook.com/SYFC.ORG.SG" target="_blank" rel="noopener noreferrer">
+                    <img src="/About/fb.jpg" alt="Facebook" width="50"height="50">
+                  </a>
+                  <a href="https://www.instagram.com/sg.yfc/?hl=en" target="_blank" rel="noopener noreferrer">
+                    <img src="/About/instagram.jpg" alt="Instagram" width="50" height="50">
+                  </a>
+                </div>
+            </div>
+            <img src="footer logo.png" alt="Footer Logo" class="float-sm-end" width="150" height="50"> <br>
+        </div>
+        <h6 class="text-center" style="text-decoration: none;"><b>©2025 Singapore Youth For Christ. All Rights Reserved</b></h6>
+
+    </footer>
+
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Go6n8jO1vce9lH8r+GZ61nA5yT2l6G5g5I5NO3y6J8KmRUw" crossorigin="anonymous"></script>
+<script>
+  AOS.init();
+</script>
+   
+</body>
+
+</body>
+</html>

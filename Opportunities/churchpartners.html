@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS (Only One Link Needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+      crossorigin="anonymous">
+      
+
+    <title>Hello, world!</title>
+     <!-- EmailJS Library -->
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+     <!-- Initialize EmailJS -->
+     <script>
+       (function () {
+         emailjs.init("U7E8Ko8nJ9PciY1Ld");
+       })();
+     </script>
+</head>
+<body>
+    <div>
+        <br>
+        <img src="Syfc logo.png" alt="SYFC Logo" class="img-fluid mx-auto d-block" width="100" height="100">
+    </div>
+    
+    <div>
+        <marquee direction="right">Singapore Youth For Christ</marquee>
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item me-4">
+                        <a class="nav-link" href="/index.html">
+                          <img src="/About/home.jpg" alt="Home" style="width: 30px; height: 30px;">
+                        </a>
+                      </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="About" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="About">
+                              <li><a class="dropdown-item" href="/About/ourmission.html">Our Mission</a></li>
+                              <li><a class="dropdown-item" href="/About/ministries.html">Ministries</a></li>
+                              <li><a class="dropdown-item" href="/About/leaders.html">Leaders</a></li>
+                              <li><a class="dropdown-item" href="/About/history.html">History</a></li>
+                              <li><a class="dropdown-item" href="/About/privacypolicy.html">Privacy Policy</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="Stories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Stories
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="Stories">
+                              <li><a class="dropdown-item" href="/Stories/ourjourney.html">Our Journey</a></li>
+                              <li><a class="dropdown-item" href="/Stories/reach.html">Reach</a></li>
+                              <li><a class="dropdown-item" href="/Stories/testimonials.html">Testimonials</a></li>
+                              <li><a class="dropdown-item" href="/Stories/communityvoices.html">Community Voices</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="Opportunities" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opportunities
+                            </a>
+                            <ul class="dropdown-menu py-2" aria-labelledby="Opportunities">
+                                <li><a class="dropdown-item" href="students.html">Students</a></li>
+                                <li><a class="dropdown-item" href="volunteers.html">Volunteers</a></li>
+                                <li><a class="dropdown-item" href="#">Church Partners</a></li>
+                                <li><a class="dropdown-item" href="businesspartnerships.html">Business Partnerships</a></li>
+                                <li><a class="dropdown-item" href="joinus.html">Join us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                          <a class="nav-link dropdown-toggle" href="#" id="SupportUs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Support Us
+                          </a>
+                          <ul class="dropdown-menu py-2" aria-labelledby="SupportUs">
+                              <li><a class="dropdown-item" href="/Supportus/donate.html">Donate</a></li>
+                             
+                          </ul>
+                      </li>
+                      <li class="nav-item me-4">
+                          <a class="nav-link" href="/findus/findus.html">Find Us</a>
+                      </li>
+                 
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="/Login/login.html">Login</a>
+                  </li>
+                </ul>
+        
+                    <!-- Search Form Properly Positioned -->
+                    <form class="d-flex ms-auto" action="https://www.google.com/search" method="GET" target="_blank">
+                      <input class="form-control me-2" type="search" name="q" placeholder="Search Google..." aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fbfbfb;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #385af3;
+    font-weight: bold;
+    text-align: center; /* Center-aligns the h1 */
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #383838;
+}
+
+h2 {
+  color: #092abc;
+  font-size: 1.2em;
+}
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.flex-item {
+    padding: 10px; /* Reduced padding for smaller size */
+    background-color: #d5fa97;
+    border: 3px solid #161515;
+    text-align: center;
+    cursor: pointer;
+    width: 15%; /* Reduced width of each flex item */
+    transition: background-color 0.3s;
+    font-size: 14px; /* Reduced font size for smaller text */
+}
+
+.flex-item:hover {
+    background-color: #eaf69c;
+}
+
+.highlight {
+    background-color: rgb(240, 244, 14); /* Highlight with yellow */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark color for the text */
+    padding: 0.5px;
+}     
+
+    header {
+      font-size: 1.5em; /* Adjusts font size */
+      font-weight: bold; /* Makes the font bold */
+      text-align: center; /* Centers the text */
+      padding: 10px 0; /* Adds space around the text */
+      margin: 10px 0; /* Adds margin for spacing */
+      color: #0c88ca; /* Dark text color */
+      font-family: 'Arial', sans-serif; /* Sets a clean font */
+      border-bottom: 2px solid #383737; /* Adds a subtle line beneath */
+    }
+
+    .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Aligns from left to right */
+}
+
+  
+  </style>
+  <br>
+      <div class="page-header">
+        <h1>Church Partners</h1>
+        <h3>Working Together to Reach the Youth for Christ</h3>
+      </div>
+      <hr style="border: 2px solid #1b1b1b; width: 100%; margin: 20px auto;">
+
+      
+      <!-- Section 1 -->
+      <div class="section">
+        <br>
+        <h2>Why Partner with Churches?</h2>
+        <p>
+          Singapore Youth for Christ (SYFC) believes that collaboration with local churches is key to transforming lives and building a Christ-centered generation. The youth are the future of the Church, and by working together, we can nurture, guide, and empower them spiritually and socially.
+        </p>
+        <p>
+          SYFC complements the church’s ministry by organizing youth camps, school outreaches, discipleship programs, and leadership development platforms. These programs are designed not to replace, but to strengthen and extend the church's influence into schools and communities.
+        </p>
+      </div>
+      
+      <!-- Section 2 -->
+      <div class="section">
+        <h2>Our Common Vision</h2>
+        <p>
+          Our partnership with churches is built on a shared vision — to see young people encounter Jesus, grow in their faith, and serve with purpose. We work hand-in-hand to:
+        </p>
+        <ul>
+          <li>Provide outreach opportunities in schools and neighborhoods</li>
+          <li>Train youth leaders and mentors for discipleship</li>
+          <li>Organize inter-church youth events and rallies</li>
+          <li>Foster a supportive network between youth ministries</li>
+        </ul>
+        <p>
+          <strong>Together, we build a kingdom mindset in the next generation.</strong>
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Our Current Church Partners</h2>
+        <p>
+          We are blessed to journey alongside churches from various denominations and communities across Singapore. Some of our committed partners include:
+        </p>
+        <ul>
+          <li>Faith Community Baptist Church</li>
+          <li>Grace Assembly of God</li>
+          <li>Yishun Christian Church (Anglican)</li>
+          <li>Cornerstone Community Church</li>
+          <li>Church of Our Saviour</li>
+          <li>City Harvest Church</li>
+        </ul>
+        <p>
+          These churches have opened doors for SYFC to engage youth through cell groups, events, and community outreach efforts.
+        </p>
+      </div>
+      
+      <!-- Section 4 -->
+      <div class="section">
+        <h2>Testimonies from Pastors</h2>
+        <p>
+          <em>"SYFC has been a valuable partner in discipling our youth and equipping our leaders. Their heart for evangelism and excellence in youth ministry has helped us reach more young people than we could alone." – Rev. Daniel Lim, Grace Assembly</em>
+        </p>
+        <p>
+          <em>"Partnering with SYFC expanded our outreach capacity, especially in schools. Their passionate and Christ-centered team works well with our youth ministry to cultivate meaningful connections." – Ps. Sharon Tan, Faith Community Baptist Church</em>
+        </p>
+      </div>
+      
+      <!-- Section 5 -->
+      <div class="section">
+        <h2>Want to Partner with Us?</h2>
+        <p>
+          If you're a church leader or part of a youth ministry looking to collaborate, SYFC welcomes your partnership! We offer:
+        </p>
+        <ul>
+          <li>Customizable youth training programs</li>
+          <li>Event collaboration and support</li>
+          <li>Leadership mentorship and youth speaker engagements</li>
+          <li>Access to school outreach platforms and resources</li>
+        </ul>
+        <p>
+          <strong>Let’s join hands to bring hope, truth, and transformation to Singapore’s youth.</strong>
+        </p>
+        <p>
+          👉 <a href="/findus/findus.html">Find us</a> to explore how your church can partner with SYFC today!
+        </p>
+      </div>
+      
+     
+
+  
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                        <img src="syfc.png" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title>
+                        <span class="fs-5">SYFC</span>
+                    </a>
+
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">"Empowering the next generation to live with purpose, faith, and love through Jesus Christ."</li>
+                        <li class="mb-2">"Building a community of young people who are passionate about making a difference in the world."</li>
+                        <li class="mb-2">"Inspiring youth to embrace their identity in Christ and impact their communities positively."</li>
+                    </ul>
+                </div>
+                
+                <!-- Footer links -->
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><a href="/About/ourmission.html">Our Mission</a></li>
+                      <li class="mb-2"><a href="/About/ministries.html">Ministries</a></li>
+                      <li class="mb-2"><a href="/About/leaders.html">Leaders</a></li>
+                      <li class="mb-2"><a href="/About/history.html">History</a></li>
+                      <li class="mb-2"><a href="/About/privacypolicy.html">Privacy Policy</a></li>
+                  </ul>
+                  
+                  </div>
+                  <div class="col-6 col-lg-2 mb-3">
+                    <h5>Stories</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><a href="/Stories/ourjourney.html">Our Journey</a></li>
+                      <li class="mb-2"><a href="/Stories/reach.html">Reach</a></li>
+                      <li class="mb-2"><a href="/Stories/testimonials.html">Testimonials</a></li>
+                      <li class="mb-2"><a href="/Stories/communityvoices.html">Community Voices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Opportunities</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="students.html">Students</a></li>
+                        <li class="mb-2"><a href="volunteers.html">Volunteers</a></li>
+                        <li class="mb-2"><a href="#">Church Partners</a></li>
+                        <li class="mb-2"><a href="businesspartnerships.html">Business Partnerships</a></li>
+                        <li class="mb-2"><a href="joinus.html">Join Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Support Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/Supportus/donate.html">Donate</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="social-media">
+                  <a href="https://www.facebook.com/SYFC.ORG.SG" target="_blank" rel="noopener noreferrer">
+                    <img src="/About/fb.jpg" alt="Facebook" width="50"height="50">
+                  </a>
+                  <a href="https://www.instagram.com/sg.yfc/?hl=en" target="_blank" rel="noopener noreferrer">
+                    <img src="/About/instagram.jpg" alt="Instagram" width="50" height="50">
+                  </a>
+                </div>
+            </div>
+            <img src="footer logo.png" alt="Footer Logo" class="float-sm-end" width="150" height="50"> <br>
+        </div>
+        <h6 class="text-center" style="text-decoration: none;"><b>©2025 Singapore Youth For Christ. All Rights Reserved</b></h6>
+
+    </footer>
+
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Go6n8jO1vce9lH8r+GZ61nA5yT2l6G5g5I5NO3y6J8KmRUw" crossorigin="anonymous"></script>
+<script>
+  AOS.init();
+</script>
+   
+</body>
+
+</body>
+</html>
