@@ -455,6 +455,46 @@ header {
         </div>
         <h6 class="text-center" style="text-decoration: none;"><b>©2025 Singapore Youth For Christ. All Rights Reserved</b></h6>
 
+        
+        <style>
+          #chatbox { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #2bb2fb; }
+          #messages { height: 300px; overflow-y: auto; margin-bottom: 10px; }
+          .bot, .user { padding: 5px; margin: 5px 0; }
+          .bot { background-color: rgb(175, 175, 247); }
+          .user { background-color: rgb(145, 199, 252); text-align: right; }
+        </style>
+      </head>
+      <body>
+
+        <div id="chatbox">
+          <div id="messages"></div>
+          <input type="text" id="userInput" placeholder="Ask me anything..." />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      
+        <script>
+          async function sendMessage() {
+            const input = document.getElementById('userInput');
+            const message = input.value.trim();
+            if (!message) return;
+      
+            const chat = document.getElementById('messages');
+            chat.innerHTML += `<div class="user">You: ${message}</div>`;
+            input.value = '';
+      
+            const res = await fetch('/chat', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ message })
+            });
+      
+            const data = await res.json();
+            chat.innerHTML += `<div class="bot">Bot: ${data.reply}</div>`;
+            chat.scrollTop = chat.scrollHeight;
+          }
+        </script>
+      </body>
+
     </footer>
 
 <!-- Bootstrap JavaScript and Popper.js -->
