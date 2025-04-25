@@ -19,3 +19,5 @@ export async function signOutRedirect () {
     const cognitoDomain = "https://us-east-1aoumlhbgb.auth.us-east-1.amazoncognito.com";
     window.location.href = `${cognitoDomain}/logout?client_id=${clientId}&logout_uri=${encodeURIComponent(logoutUri)}`;
 };
+
+
