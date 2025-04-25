@@ -2,25 +2,22 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <script type="module">
-      import { UserManager } from 'https://cdn.skypack.dev/oidc-client-ts';
-
-      const userManager = new UserManager({
-        authority: "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_aOUMlhBgb",
-        client_id: "1b7iih9kge05ojlvjta9najefs",
-        redirect_uri: "https://www.techsg.click",
-        response_type: "code",
-        scope: "phone openid email"
+    <div>
+      Hello: <pre id="email"></pre>
+      Access token: <pre id="access-token"></pre>
+      ID token: <pre id="id-token"></pre>
+      Refresh token: <pre id="refresh-token"></pre>
+  </div>
+  
+  <script type="module">
+      import { userManager } from "./main.js";
+  
+      userManager.signinCallback().then(function (user) {
+          document.getElementById("email").textContent = user.profile?.email;
+          document.getElementById("access-token").textContent = user.access_token;
+          document.getElementById("id-token").textContent = user.id_token;
+          document.getElementById("refresh-token").textContent = user.refresh_token;
       });
-
-      userManager.signinCallback()
-        .then(user => {
-          // Optionally store tokens or redirect to app
-          window.location.href = "/login.html";
-        })
-        .catch(err => {
-          console.error("Signin callback error:", err);
-        });
-    </script>
+  </script>
   </body>
 </html>
